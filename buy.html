@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/buy_style.css') }}">
+    <title>Beauty Grand</title>
+</head>
+<body>
+    <h1>Выбрать жанр музыки: </h1>
+    <div class="main">
+        <div class="item">
+            <img src="{{ url_for('static', filename='images/maxresdefault.png') }}" alt="maxresdefault.png">
+            <p>Phonk</p>
+            <button><a href="contacts">Выбрать</a></button>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='images/1674692106_top-fon-com-p-rok-fon-dlya-prezentatsii-158.png') }}" alt="1674692106_top-fon-com-p-rok-fon-dlya-prezentatsii-158.png">
+            <p>Рок</p>
+            <button><a href="contacts">Выбрать</a></button>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='images/1645059724_27-fikiwiki-com-p-kartinki-rep-29.png') }}" alt="1645059724_27-fikiwiki-com-p-kartinki-rep-29.png">
+            <p>Рэп</p>
+            <button><a href="contacts">Выбрать</a></button>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='images/1645053935_14-fikiwiki-com-p-kartinki-khip-khop-14.png') }}" alt="1645053935_14-fikiwiki-com-p-kartinki-khip-khop-14.png">
+            <p>Хип-хоп</p>
+            <button><a href="contacts">Выбрать</a></button>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='images/1663795398_10-phonoteka-org-p-fon-dlya-karaoke-krasivo-11.png') }}" alt="1663795398_10-phonoteka-org-p-fon-dlya-karaoke-krasivo-11.png">
+            <p>Караоке</p>
+            <button><a href="contacts">Выбрать</a></button>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест Викторина</title>
+</head>
+<body>
+    <a href="/">На главную</a>
+    <h1>{{ question }}</h1>
+    <p>Варианты ответа:</p>
+    <form method="POST" action="/result">
+        <p><input type="radio" name="quest" value="{{ answers[0] }} {{ id }}"> {{ answers[0] }}</p>
+        <p><input type="radio" name="quest" value="{{ answers[1] }} {{ id}}">{{ answers[1] }}</p>
+        <p><input type="radio" name="quest" value="{{ answers[2] }} {{ id}}">{{ answers[2] }}</p>
+        <p><input type="radio" name="quest" value="{{ answers[3] }} {{ id}}">{{ answers[3] }}</p>
+        <input type="submit" value="Ответить">
+    </form>
+</body>
+</html>
